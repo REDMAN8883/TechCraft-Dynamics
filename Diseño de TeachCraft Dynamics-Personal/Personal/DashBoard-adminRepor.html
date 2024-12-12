@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+    <link rel="icon" href="/img/icono-teach.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/PersonalCSS/DashBoardRepor.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script  type= "module" src="/js/reportesadmin.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- datatables css y js -->
+    <link href="//cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" rel="stylesheet">
+    <script src="//cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+    <title>TechCraft Dynamics</title>
+
+</head>
+<body>
+    <div class="contenedor-dashboard">
+
+        <aside class="barra-lateral">
+           
+                <div class="admin">
+                    <img src="/img/icon-admin.webp" alt="" width="80" height="80">
+                    <h2>Supervisor</h2>
+                </div>
+
+
+            
+           <!-- Menú de navegación -->
+           <nav class="menu">
+            <!-- Opcion: Perfil -->
+            <a href="/Personal/Perfil.html" class="opcion">
+                <!-- Icono SVG de usuario -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M680-280q25 0 42.5-17.5T740-340q0-25-17.5-42.5T680-400q-25 0-42.5 17.5T620-340q0 25 17.5 42.5T680-280Zm0 120q31 0 57-14.5t42-38.5q-22-13-47-20t-52-7q-27 0-52 7t-47 20q16 24 42 38.5t57 14.5ZM480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v227q-19-8-39-14.5t-41-9.5v-147l-240-90-240 90v188q0 47 12.5 94t35 89.5Q310-290 342-254t71 60q11 32 29 61t41 52q-1 0-1.5.5t-1.5.5Zm200 0q-83 0-141.5-58.5T480-280q0-83 58.5-141.5T680-480q83 0 141.5 58.5T880-280q0 83-58.5 141.5T680-80ZM480-494Z"/></svg>
+                Perfil
+            </a>
+            <!-- Opción: CATEGORIAS-->
+            <a href="/Personal/DashBoard-adminCategorias.html" class="opcion">
+                <!-- Icono SVG de productos -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z"/></svg>
+                Gestión de categorias
+            </a>
+
+            <!-- Opcion: REPORTES -->
+            <a href="/Personal/DashBoard-adminRepor.html" class="opcion">
+                <!-- Icono SVG de ventas -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240ZM330-120 120-330v-300l210-210h300l210 210v300L630-120H330Zm34-80h232l164-164v-232L596-760H364L200-596v232l164 164Zm116-280Z"/></svg>
+                Gestion de reportes
+            </a>
+            <!-- Opción: Salir -->
+            <a href="/Inicio_de_Sesion.html" class="opcion">
+                <!-- Icono SVG de salir -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M10 17l5-5-5-5v10zM4 4h2v16H4V4zm16 0h-6v2h6v12h-6v2h6c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"></path>
+                </svg>
+                Salir
+            </a>
+
+
+
+
+
+                <div class="logo">
+                    <img src="/img/IconoTech.png" alt="Logo" width="80" height="80">
+                    <h2>TechCraft Dynamics</h2>
+                </div>
+            </nav>
+        </aside>
+        <main class="contenido-principal">
+            
+            <div class="titulo">
+                <h1>Gestión de Reportes</h1>
+            </div>
+            <div class="contenedor-tabla">
+                
+                <div class="cards">
+                    <div class="card">
+                        <span class="material-icons" > trending_up</span>
+                        <h3>Proyección</h3>
+                    </div>
+                    <div class="card">
+                        <span class="material-icons" > assessment</span>
+                        <h3>Estadisticas</h3>
+                    </div>
+                    <div class="card">
+                        <span class="material-icons" > shopping_cart</span>
+                        <h3>Ventas</h3>
+                    </div>
+                </div>
+            
+                <h1>Panel de estadisticas</h1>
+            
+                <div class="contenedor-graficos">
+                    <div class="grafico">
+                        <p>Ventas por mes</p>
+                        <canvas id="ventasMes"></canvas>
+                    </div>
+            
+                    <div class="grafico">
+                        <p>Servicios mas solicitados Mi amigo fiel</p>
+                        <canvas id="serviciosSolicitados"></canvas>
+                    </div>
+            
+                    <div class="grafico">
+                        <p>Mejores proveedores</p>
+                        <canvas id="mejoresClientes"></canvas>
+                    </div>
+            
+                    
+                    <div class="grafico">
+                        <p>Top productos de mi amigo fiel</p>
+                        <canvas id="topProductos"></canvas>
+                    </div>
+                    
+                </div>
+            </main>
+            </div>
+
+            </div>
+            
+
+
+    </div>
+    <script src="/js/Table.js"></script>
+    <script src="/js/validacion.js"></script>
+    <script src="/js/reportesadmin.js"></script>
+</body>
+</html>
