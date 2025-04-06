@@ -45,7 +45,7 @@ table th, table td {
 }
 
 table th {
-    background-color: #4CAF50;
+    background-color:#349771;
     color: white;
 }
 
@@ -78,7 +78,7 @@ tbody a:hover{
 }
 
 .actions .edit {
-    background-color: #007BFF;
+    background-color:#139664;
     color: white;
 }
 
@@ -102,7 +102,7 @@ tbody a:hover{
     margin: 0 5px;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color:#139664;
     color: white;
     cursor: pointer;
 }

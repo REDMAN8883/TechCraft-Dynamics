@@ -115,3 +115,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) ;
 }
+.T-superior {
+    grid-column: 1 / span 2; /* Ocupa el ancho de las dos columnas */
+    text-align: left; /* Alinea el título a la izquierda */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}

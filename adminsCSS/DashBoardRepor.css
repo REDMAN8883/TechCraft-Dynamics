@@ -124,7 +124,7 @@ body {
 .card{
     background-color: #e8f5e9;
     color: #ED9527;
-    height: 120px;
+    height: 150px;
     width: 30%;
     text-align: center;
     padding: 9px;
@@ -139,6 +139,7 @@ body {
     color: var(--blanco);
     border-top: 2px solid #82f18b;
     font-family: 'Roboto' sans-serif;
+    cursor: pointer;
 }
 
 .card .material-icons{
@@ -192,7 +193,7 @@ body {
 }
 
 .grafico{
-    flex: 0 0 calc(50% - 20px);
+    flex: 0 0 calc(100% - 5px);
     background-color: #e8f5e9;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -220,4 +221,128 @@ object-fit: contain;
     max-width: 90% !important;
     margin: 0 auto;
 }
+.Pedidos-pendientes, .Stock-critico{
+    width: 100%;
+    height: 200px;
+    background-color: #4baa86; 
+    border-radius: 10px;
+    border: 1px black solid;
+    margin-top: 30px;
+}
+.Actividad-reciente{
+    width: 100%;
+    height:300px;
+    background-color: #4baa86; 
+    border-radius: 10px;
+    border: 1px black solid;
+    margin-top: 30px;
+}
+.Pedidos-pendientes h2{
+    margin: 10px;
+    padding-top: 10px;
+}
+.Stock-critico h2{
+    margin: 10px;
+    padding-top: 10px;
+}
+.Actividad-reciente h2{
+    margin: 10px;
+    padding-top: 10px;
+}
+.Cuadrado{
+    height: 50px;
+    background-color:#fdddac;
+    margin: 10px;
+    padding-left: 10px;
+    padding-top: 10px; 
+}
+.Cuadrado:hover{
+    transform: scaleY(1.03);
+    transition: 0.1s;
+}
+.Cuadrado2:hover{
+    transform: scaleY(1.03);
+    transition: 0.1s;
+}
+.Cuadrado3:hover{
+    transform: scaleY(1.03);
+    transition: 0.1s;
+}
 
+.Cuadrado p{
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.Cuadrado2{
+    height: 50px;
+    background-color:#fdacac; /* Cambia el color del segundo bloque "Stock-critico" */
+    margin: 10px;
+    padding-left: 10px;
+    padding-top: 10px; 
+}
+.Cuadrado2 p{
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.Cuadrado3{
+    height: 50px;
+    background-color:#ffffff; /* Cambia el color del Tercer bloque "Actividad-reciente" */
+    margin: 10px;
+    padding-left: 10px;
+    padding-top: 10px; 
+}
+.Cuadrado3 p{
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.Pedidos-pendientes svg {
+    margin-right: 10px;
+    fill: var(--blanco);
+}
+.Pedidos-pendientes .Icono {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor:default;
+}
+.Stock-critico svg {
+    margin-right: 10px;
+    fill: var(--blanco);
+}
+.Stock-critico .Icono {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor:default;
+}
+.Actividad-reciente svg {
+    margin-right: 10px;
+    fill: var(--blanco);
+}
+.Actividad-reciente .Icono {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor:default;
+}

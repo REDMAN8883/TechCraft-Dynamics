@@ -93,8 +93,8 @@ body {
 .contenido-principal{
     flex: 1;
     padding: 20px;
-
 }
+
 
 .titulo h1{
     font-size: 28px;
@@ -117,13 +117,16 @@ body {
     margin: 0 auto; /* Centra horizontalmente */
     padding: 20px;
     height: 750px;
-    
+}
+
+.contenedor-tabla h3{
+    text-align: center;
 }
 
 .datos{
     flex: 1; /* Ocupa el espacio disponible */
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Dos columnas iguales */
+    grid-template-columns: 1fr 2fr ; /* Dos columnas iguales */
     gap: 15px; /* Espaciado entre elementos */
     background-color: #f9f9f9;
     padding: 40px;
@@ -132,6 +135,15 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 700px;
     align-items: center;
+}
+
+.T-superior {
+    grid-column: 1 / span 2; /* Ocupa el ancho de las dos columnas */
+    text-align: left; /* Alinea el título a la izquierda */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
 }
 .imagen{
     flex: 1; /* Ocupa espacio proporcional */

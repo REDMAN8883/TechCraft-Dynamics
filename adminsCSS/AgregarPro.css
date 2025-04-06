@@ -132,6 +132,14 @@ body {
     height: 700px;
     align-items: center;
 }
+.T-superior {
+    grid-column: 1 / span 2; /* Ocupa el ancho de las dos columnas */
+    text-align: left; /* Alinea el título a la izquierda */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
 .imagen{
     flex: 1; /* Ocupa espacio proporcional */
     display: flex;

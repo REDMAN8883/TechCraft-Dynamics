@@ -37,28 +37,30 @@
     width: 100%;
 }
 
-.subcategorias li {
+.subcategorias button {
+    width: 100%;
     margin: 10px 0;
     padding: 10px;
+    color: white;
     background-color: #ED9527;  /*Cambia los colores de los botones*/
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    text-decoration: none;
+    border: 2px solid transparent;
 }
 
-.subcategorias a {
-    text-decoration: none;
-    color: #ffffff;
-}
 
-.subcategorias li:hover {
+.subcategorias button:hover {
     background-color: #4CAF50;
 }
 .productos-container {
     width: 75%;
     padding: 20px;
+}
+
+.productos-container h3 {
+    justify-self: end;
 }
 
 .productos-container h2 {
@@ -69,8 +71,10 @@
 
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    overflow:  hidden;
+    flex: 1;
 }
 
 .producto {
@@ -78,31 +82,61 @@
     padding: 10px;
     border-radius: 8px;
     text-align: center;
+    position: relative; /* Necesario para los botones */
     transition: transform 0.3s, background-color 0.3s;
-
+    overflow: hidden; /* Evita que el contenido desborde */
+}
+.producto:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .producto img {
     width: 100%;
-    height: auto;
+    max-height: 200px; /* Limita la altura de imágenes largas */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.producto p {
+.producto .titulo {
     font-size: 16px;
     font-weight: bold;
     color: #413939;
-    margin: 0;
+    margin: 5px 0;
 }
 
-.producto #verde{
+.producto .precio {
+    font-size: 14px;
     color: green;
+    margin: 5px 0 15px; /* Añade espacio antes de los botones */
 }
 
-.producto:hover {
-    transform: scale(1.05);
-    background-color: #d1d1d1;
+.producto .botones {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los botones */
+    gap: 10px; /* Espaciado entre botones */
+    opacity: 0; /* Ocultos inicialmente */
+    transition: opacity 0.3s;
+}
+
+.producto:hover .botones {
+    opacity: 1; /* Muestra los botones al pasar el mouse */
+}
+
+.producto button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #3e8e41;
 }
 :root {
     --blanco: #FFFCE8;
@@ -271,4 +305,44 @@ body {
     font-size: 14px;
     transition: background-color 0.3s ease;
     margin-bottom: 10px;
+}
+/* Estilo del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que quede por encima de otros elementos */
+}
+
+/* Contenedor del contenido del modal */
+.modal-contenido {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Botón para cerrar el modal */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.cerrar:hover {
+    color: #ff0000;
 }

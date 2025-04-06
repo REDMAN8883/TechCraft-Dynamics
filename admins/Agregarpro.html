@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
     <link rel="icon" href="/img/icono-teach.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="/adminsCSS/AgregarPro.css">
     <link rel="stylesheet" href="/modal.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- jquery -->
@@ -17,6 +16,8 @@
     <!-- datatables css y js -->
     <link href="//cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" rel="stylesheet">
     <script src="//cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/adminsCSS/AgregarPro.css">
     <title>TechCraft Dynamics</title>
 
 </head>
@@ -39,6 +40,11 @@
                     <!-- Icono SVG de usuario -->
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M680-280q25 0 42.5-17.5T740-340q0-25-17.5-42.5T680-400q-25 0-42.5 17.5T620-340q0 25 17.5 42.5T680-280Zm0 120q31 0 57-14.5t42-38.5q-22-13-47-20t-52-7q-27 0-52 7t-47 20q16 24 42 38.5t57 14.5ZM480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v227q-19-8-39-14.5t-41-9.5v-147l-240-90-240 90v188q0 47 12.5 94t35 89.5Q310-290 342-254t71 60q11 32 29 61t41 52q-1 0-1.5.5t-1.5.5Zm200 0q-83 0-141.5-58.5T480-280q0-83 58.5-141.5T680-480q83 0 141.5 58.5T880-280q0 83-58.5 141.5T680-80ZM480-494Z"/></svg>
                     Perfil
+                </a>
+                <a href="/admins/IngresarVentas.html" class="opcion">
+                    <!-- Icono SVG de usuario -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
+                    Ingreso de ventas
                 </a>
 
                 <!-- Opción: Usuarios -->
@@ -94,73 +100,102 @@
             </div>
             <div class="contenedor-tabla">
                 <div class="datos">
-                    <div class="imagen">
-                        <img src="/img/icon_conMas.png" alt="">
-                        <h3>Imagen del producto</h3>
+                    <div class="T-superior">
+                        <h4>Agregar producto nuevo</h4>
                     </div>
-                    <section class="formulario">
-                        <form id="form">
-                            <h4>Agregar producto nuevo</h4>
-                            <div class="DP">
-                                <!-- 1 -->
-                                <p>ID: </p>
-                                <input type="number" required>
-                                <!-- 2 -->
-                                <p>Nombre del proucto: </p>
-                                <input type="text"  required>
-                                <!-- 3 -->
-                                <p>Tipo de Subcategoria</p>
-                                 <select name="DC" id="DC1">
-                                    <option value="">Ninguna</option>
-                                    <option value="">Alimentos</option>
-                                    <option value="">Accesorios</option>
-                                    <option value="">Medicina</option>
-                                    <option value="">Juguetes</option>
-                                    <option value="">Otro</option>
-                                </select>
-                                <!-- 4 -->
-                                <p>Cantidad:</p>
-                                <input type="Number"   required>
-                                <!-- 5 -->
-                            </div>
-                            
-                            <div class="DP2">
-                                <p>Proveedor: </p>
-                                <input type="text" required>
+                    <div class="imagen">
+                    </div>
+                    
+<!-- BOOTSTRAP -->
+<!-- Primer div -->
+        <div class="container mt-4">
+                <div class="card shadow p-4">
+                    <h2 class="text-center mb-4">Agregar Categoría Nueva</h2>
+                    
+                <div class="row">
+    
+       
+    
+                                    <!-- Imagen de la categoría -->
+                     <div class="col-md-5 text-center">
+                        <img src="/img/icon_conMas.png" alt="Imagen de la categoría" class="img-fluid rounded">
+                          <p class="mt-3"><strong>Imagen de la categoría</strong></p>
+                    </div>
 
-                                <p>Correo del proveedor: </p>
-                                <input type="email" required>
 
-                                <p>Contacto del proveedor: </p>
-                                <input type="tel" required>
-                                <!-- 6 -->
-                                
-                            
-
-                            </div>
-
-                            
-                            
-                            <div class="botones">
-                                <div class="B1">
-                                    <button type="submit">Guardar</button>
+                    <div class="col-md-7">
+                            <form id="form">
+                                <div class="row">
+                                    <!-- Empresa -->
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">ID</label>
+                                        <input type="text" class="form-control" placeholder="Nombre de la empresa">
+                                    </div>
+                
+                                    <!-- Nombre del proveedor -->
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Nombre del producto</label>
+                                        <input type="text" class="form-control" placeholder="Nombre del proveedor">
+                                    </div>
                                 </div>
-                                <div class="B2">
-                                    <button type="submit">No Guardar</button>
+                
+                                <div class="row">
+                                    <!-- Tipo de producto -->
+                                    <div class="col-md-6 mb-3">
+                                     <label class="form-label">Tipo de Subcategoria</label>
+                                        <select class="form-select">
+                                            <option value="">Ninguns</option>
+                                            <option value="Comidas">Alimentos</option>
+                                            <option value="Juguetes">Accesorios</option>
+                                            <option value="Otro">Medicina</option>
+                                            <option value="Otro">Juguetes</option>
+                                            <option value="Otro">Otros</option>
+                                      </select>
+                                    </div>
+                
+                                    <!-- Ubicación -->
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Cantidad</label>
+                                        <input type="text" class="form-control" placeholder="Ubicación del producto">
+                                    </div>
                                 </div>
-                                <div class="B3">
-                                    <button type="submit" onclick="location.href='/admins/index4.html'">Regresar</button>
+                
+                                <div class="row">
+                                        <!-- Correo del proveedor -->
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Proveedor</label>
+                                        <input type="email" class="form-control" placeholder="Correo electrónico">
+                                    </div>
+                
+                                    <!-- Contacto del representante -->
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Correo del proveedor</label>
+                                        <input type="text" class="form-control" placeholder="Teléfono o contacto">
+                                    </div>
+
+                                    <!-- Contacto proveedor-->
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Contacto del proveedor</label>
+                                        <input type="text" class="form-control" placeholder="Teléfono o contacto">
+                                    </div>
                                 </div>
-                            </div>
-                            
-                        </form>
-                    </section>
+                                 <hr>
+                
+                                     <!-- Botones -->
+                                <div class="text-center mt-3">
+                                    <button type="submit" class="btn btn-success">Guardar</button>
+                                    <button type="reset" class="btn btn-warning">Limpiar</button>
+                                    <a href="#" class="btn btn-danger">Cancelar</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
+             </div>
         </main>
     </div>
     <script src="/js/BotonesU.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
         
     

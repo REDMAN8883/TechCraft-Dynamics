@@ -134,20 +134,31 @@ body {
     align-items: center;
 
 }
+.T-superior {
+    grid-column: 1 / span 2; /* Ocupa el ancho de las dos columnas */
+    text-align: left; /* Alinea el título a la izquierda */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
 
 .formulario {
     width: 80%; 
     margin: 0 auto; 
     padding: 20px;
+    justify-content: space-between;
+    gap: 20;
     background-color: #f9f9f9;
     border: 0.1px solid #000000;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-content: center;
     background-color: #e8f5e9;
-    height: 600px;
+    height: 520px;
     width: 1000px;
 }
+
 
 .formulario .DP {
     display: flex;
@@ -177,6 +188,7 @@ body {
 
 .DP2 input, .DP2 select {
     min-width: 150px; /* Ancho mínimo para evitar deformaciones */
+    
 }
 
 select, input {

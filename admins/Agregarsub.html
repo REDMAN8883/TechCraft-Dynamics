@@ -40,6 +40,11 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M680-280q25 0 42.5-17.5T740-340q0-25-17.5-42.5T680-400q-25 0-42.5 17.5T620-340q0 25 17.5 42.5T680-280Zm0 120q31 0 57-14.5t42-38.5q-22-13-47-20t-52-7q-27 0-52 7t-47 20q16 24 42 38.5t57 14.5ZM480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v227q-19-8-39-14.5t-41-9.5v-147l-240-90-240 90v188q0 47 12.5 94t35 89.5Q310-290 342-254t71 60q11 32 29 61t41 52q-1 0-1.5.5t-1.5.5Zm200 0q-83 0-141.5-58.5T480-280q0-83 58.5-141.5T680-480q83 0 141.5 58.5T880-280q0 83-58.5 141.5T680-80ZM480-494Z"/></svg>
                     Perfil
                 </a>
+                <a href="/admins/IngresarVentas.html" class="opcion">
+                    <!-- Icono SVG de usuario -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg>
+                    Ingreso de ventas
+                </a>
 
                 <!-- Opción: Usuarios -->
                 <a href="/admins/DashBoard-admin.html" class="opcion">
@@ -94,9 +99,12 @@
             </div>
             <div class="contenedor-tabla">
                 <div class="datos">
+                    <div class="T-superior">
+                        <h4>Agregar subcategoría nueva</h4>
+                    </div>
                     <section class="formulario">
                         <form id="form">
-                            <h4>Agregar subcategoria nueva</h4>
+                            
                             <div class="DP">
                                 <!-- 1 -->
                                 <p>Nombre de la subcategoria: </p>
@@ -150,24 +158,28 @@
                                 <div class="B1">
                                     <button type="submit">Guardar</button>
                                 </div>
+
                                 <div class="B2">
                                     <button type="submit">No Guardar</button>
                                 </div>
+
+                                <div class="B2">
+                                    <button type="submit">Eliminar</button>
+                                </div>
+
                                 <div class="B3">
                                     <button type="submit" onclick="location.href='/admins/index4.html'">Regresar</button>
                                 </div>
-                            </div>
-                            
+
+                            </div>                           
                         </form>
                     </section>
                 </div>
             </div>
         </main>
     </div>
-    <script src="/js/BotonesU.js"></script>
-    
-
-        
-    
+    <script src="/js/BotonesU.js"></script>  
+    <script src="/js/borrar.js"></script>
+    <script src="/js/validacion.js"></script>
 </body>
-</html>
+</html> 

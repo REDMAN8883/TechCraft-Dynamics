@@ -41,7 +41,7 @@
     width: 100%;
 }
 
-.subcategorias li {
+.subcategorias button {
     margin: 10px 0;
     padding: 10px;
     background-color: #ED9527;
@@ -49,9 +49,12 @@
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
+    border: 2px solid transparent;
+    color: white;
 }
 
-.subcategorias li:hover {
+.subcategorias button:hover {
     background-color: #4CAF50;
 }
 
@@ -68,8 +71,8 @@
 
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
 }
 
 .producto {
@@ -265,4 +268,30 @@ body {
     font-size: 14px;
     transition: background-color 0.3s ease;
     margin-bottom: 10px;
+}
+.producto .botones {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los botones */
+    gap: 10px; /* Espaciado entre botones */
+    opacity: 0; /* Ocultos inicialmente */
+    transition: opacity 0.3s;
+}
+
+.producto:hover .botones {
+    opacity: 1; /* Muestra los botones al pasar el mouse */
+}
+
+.producto button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #3e8e41;
 }
