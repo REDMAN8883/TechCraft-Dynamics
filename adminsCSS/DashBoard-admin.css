@@ -325,3 +325,33 @@ button:hover{
 .agregar button:hover{
     background-color: #139664;
 }
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+    .barra-lateral {
+        width: 80px;
+    }
+
+    .contenedor-dashboard {
+        margin-left: 80px;
+    }
+
+    .texto-opcion {
+        display: none;
+    }
+
+    .logo h2,
+    .admin h2 {
+        display: none;
+    }
+
+    .logo {
+        margin-top: auto;
+        padding: 10px 0;
+    }
+
+    .admin {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+}

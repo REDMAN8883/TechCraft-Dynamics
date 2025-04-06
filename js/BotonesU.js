@@ -1,5 +1,5 @@
 // Botón "Guardar"
-document.querySelector('.B1 button').addEventListener('click', function (event) {
+document.querySelector('.btn.btn-success').addEventListener('click', function (event) {
     event.preventDefault(); // Evita el comportamiento predeterminado del botón
 
     Swal.fire({
@@ -27,7 +27,7 @@ document.querySelector('.B1 button').addEventListener('click', function (event) 
 });
 
 // Botón "No Guardar"
-document.querySelector('.B2 button').addEventListener('click', function (event) {
+document.querySelector('.btn.btn-warning').addEventListener('click', function (event) {
     event.preventDefault(); // Evita el comportamiento predeterminado del botón
 
     Swal.fire({

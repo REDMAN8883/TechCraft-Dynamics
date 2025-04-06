@@ -23,7 +23,27 @@ document.querySelector('.btn-ingresar').addEventListener('click', function (even
             confirmButtonText: 'Ingresar',
         }).then(() => {
             // Redirigir a otra página
-            window.location.href = 'Administrador/DashboardAdmin.html'; 
+            window.location.href = 'admins/DashBoard-admin.html'; 
+        });
+    }else if (email === 'supervisor@maskot.com' && password === '12345') {
+        Swal.fire({
+            icon: 'success',
+            title: 'Inicio de sesión exitoso',
+            text: 'Bienvenido Administrador.',
+            confirmButtonText: 'Ingresar',
+        }).then(() => {
+            // Redirigir a otra página
+            window.location.href = 'admins/DashBoard-admin.html'; 
+        });
+    }else if (email === 'personal@maskot.com' && password === '12345') {
+        Swal.fire({
+            icon: 'success',
+            title: 'Inicio de sesión exitoso',
+            text: 'Bienvenido Administrador.',
+            confirmButtonText: 'Ingresar',
+        }).then(() => {
+            // Redirigir a otra página
+            window.location.href = 'admins/DashBoard-admin.html'; 
         });
     } else {
         Swal.fire({
