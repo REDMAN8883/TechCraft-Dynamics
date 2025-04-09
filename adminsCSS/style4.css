@@ -346,3 +346,36 @@ body {
 .cerrar:hover {
     color: #ff0000;
 }
+
+@media screen and (max-width: 768px) {
+    .barra-lateral {
+        width: 80px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .contenedor-dashboard {
+        margin-left: 80px;
+    }
+
+    .texto-opcion {
+        display: none;
+    }
+
+    .opcion {
+        justify-content: center;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .menu .opcion:hover {
+        background-color: #5cb693;
+    }
+
+    .admin h2,
+    .logo h2 {
+        display: none;
+    }
+}

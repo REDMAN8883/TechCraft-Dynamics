@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
     <link rel="icon" href="/img/icono-teach.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/adminsCSS/AgregarU.css">
     <link rel="stylesheet" href="/modal.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- jquery -->
@@ -16,22 +17,22 @@
     <!-- datatables css y js -->
     <link href="//cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" rel="stylesheet">
     <script src="//cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
-    <link rel="stylesheet" href="/adminsCSS/AgregarP.css">
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>TechCraft Dynamics</title>
 
 </head>
 <body>
     <div class="contenedor-dashboard">
+
         <aside class="barra-lateral">
+           
                 <div class="admin">
                     <img src="/img/icon-admin.webp" alt="" width="80" height="80">
                     <h2>Administrador</h2>
                 </div>
 
+
             
-           <!-- Menú de navegación -->
+            <!-- Menú de navegación -->
             <nav class="menu">
                 <!-- Opcion: Perfil -->
                 <a href="/admins/Perfil.html" class="opcion">
@@ -46,7 +47,7 @@
                 </a>
 
                 <!-- Opción: Usuarios -->
-                <a href="/admins/DashBoard-admin.html" class="opcion">
+                <a href="/admins/admin.html" class="opcion">
                     <!-- Icono SVG de usuario -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
@@ -54,13 +55,12 @@
                     Gestión de usuarios
                 </a>
                 <!-- Opción: CATEGORIAS-->
-                <a href="/admins/DashBoard-adminCategorias.html" class="opcion">
+                <a href="/admins/adminCategorias.html" class="opcion">
                     <!-- Icono SVG de productos -->
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z"/></svg>
-                    Gestión de categorias
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z"/></svg>                    Gestión de categorias
                 </a>
                 <!-- Opción: PROVEEDORES -->
-                <a href="/admins/DashBoard-adminProve.html" class="opcion">
+                <a href="/admins/adminProveedores.html" class="opcion">
                     <!-- Icono SVG de ventas -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
@@ -68,7 +68,7 @@
                     Gestion de proveedores
                 </a>
                 <!-- Opcion: REPORTES -->
-                <a href="/admins/DashBoard-adminRepor.html" class="opcion">
+                <a href="/admins/adminReportes.html" class="opcion">
                     <!-- Icono SVG de ventas -->
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240ZM330-120 120-330v-300l210-210h300l210 210v300L630-120H330Zm34-80h232l164-164v-232L596-760H364L200-596v232l164 164Zm116-280Z"/></svg>
                     Gestion de reportes
@@ -83,7 +83,7 @@
                 </a>
 
 
-                    <!-- BOOTSTRAP -->
+
 
                 <div class="logo">
                     <img src="/img/IconoTech.png" alt="Logo" width="80" height="80">
@@ -100,82 +100,62 @@
                 
                 <div class="datos">
                     <div class="T-superior">
-                        <h4>Agregar proveedor nuevo</h4>
+                        <h4>Modificar proveedor</h4>
                     </div>
                     <div class="imagen">
                         <img src="/img/icon_conMas.png" alt="">
-                        <h3>Datos Personales</h3>
+                        <h3>Datos Personales del proveedor</h3>
                     </div>
-                </head>
-                <body class="bg-light">
-                
-                <div class="container mt-4">
-                    <div class="card shadow p-4">
-                        <h2 class="text-center mb-4">Agregar Proveedor</h2>
-                
+                    <section class="formulario">
                         <form id="form">
-                            <div class="row">
-                                <!-- Empresa -->
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Empresa:</label>
-                                    <input type="text" class="form-control" placeholder="Nombre de la empresa">
+                            <div class="DP">
+                                <!-- 1 -->
+                                <p>Empresa: </p>
+                                <input type="text" placeholder="Italcol S.A" required>
+                                <!-- 2 -->
+                                <p>Nombre del proveedor: </p>
+                                <input type="text" placeholder="Cuida Esquivel" required>
+                                <!-- 3 -->
+                                <p>Tipo de productos:</p>
+                                 <select name="DC" id="DC1">
+                                    <option value="">Comidas</option>
+                                    <option value="">Juguetes</option>
+                                    <option value="">Otro</option>
+                                </select>
+                                <p>Ubicacion: </p>
+                                <input type="text" placeholder="Suba" required>
+                            </div>
+                                <!-- 4 -->
+                               <div class="DP2">
+                                <p>Correo del proveedor: </p>
+                                <input type="email" placeholder="SamuelCgmail.com" required>
+                                <!-- 6 -->
+                                <p>Contacto del representante: </p>
+                                <input type="tel" placeholder="12345" required>
+                                <p>Contacto del proveedor: </p>
+                                <input type="tel" placeholder="12345" required>
+                               </div>
+                               
+                            <div class="botones">
+                                <div class="B1">
+                                    <button type="submit">Guardar</button>
                                 </div>
-                
-                                <!-- Nombre del proveedor -->
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Nombre del proveedor:</label>
-                                    <input type="text" class="form-control" placeholder="Nombre del proveedor">
+                                <div class="B2">
+                                    <button type="submit">No Guardar</button>
+                                </div>
+                                <div class="B3">
+                                    <button type="submit" onclick="location.href='/admins/DashBoard-adminProve.html'">Regresar</button>
                                 </div>
                             </div>
-                
-                            <div class="row">
-                                <!-- Tipo de producto -->
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Tipo de producto:</label>
-                                    <select class="form-select">
-                                        <option value="">Ninguno</option>
-                                        <option value="Comidas">Comidas</option>
-                                        <option value="Juguetes">Juguetes</option>
-                                        <option value="Otro">Otro</option>
-                                    </select>
-                                </div>
-                
-                                <!-- Ubicación -->
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Ubicación:</label>
-                                    <input type="text" class="form-control" placeholder="Ubicación del producto">
-                                </div>
-                            </div>
-                
-                            <div class="row">
-                                <!-- Correo del proveedor -->
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Correo del proveedor:</label>
-                                    <input type="email" class="form-control" placeholder="Correo electrónico">
-                                </div>
-                
-                                <!-- Contacto del representante -->
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Contacto del representante:</label>
-                                    <input type="text" class="form-control" placeholder="Teléfono o contacto">
-                                </div>
-                            </div>
-                
-                            <!-- Botones -->
-                            <div class="text-center mt-3">
-                                <button type="submit" class="btn btn-success">Guardar</button>
-                                <button type="reset" class="btn btn-warning">Limpiar</button>
-                                <a href="#" class="btn btn-danger">Cancelar</a>
-                            </div>
+                            
                         </form>
-                    </div>
-                </div>
+                    </section>
                 </div>
             </div>
         </main>
     </div>
     <script src="/js/BotonesU.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 
         
     

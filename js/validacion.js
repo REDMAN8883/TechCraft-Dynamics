@@ -23,7 +23,7 @@ document.querySelector('.btn-ingresar').addEventListener('click', function (even
             confirmButtonText: 'Ingresar',
         }).then(() => {
             // Redirigir a otra página
-            window.location.href = 'admins/DashBoard-admin.html'; 
+            window.location.href = 'admins/admin.html'; 
         });
     }else if (email === 'supervisor@maskot.com' && password === '12345') {
         Swal.fire({

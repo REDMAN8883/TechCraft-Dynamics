@@ -64,8 +64,8 @@
 
 .grid-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
 }
 
 .producto {
@@ -76,7 +76,7 @@
     transition: transform 0.3s, background-color 0.3s;
 }
 
-.producto img {
+.producto img { 
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -265,4 +265,37 @@ body {
     font-size: 14px;
     transition: background-color 0.3s ease;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .barra-lateral {
+        width: 80px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .contenedor-dashboard {
+        margin-left: 80px;
+    }
+
+    .texto-opcion {
+        display: none;
+    }
+
+    .opcion {
+        justify-content: center;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .menu .opcion:hover {
+        background-color: #5cb693;
+    }
+
+    .admin h2,
+    .logo h2 {
+        display: none;
+    }
 }

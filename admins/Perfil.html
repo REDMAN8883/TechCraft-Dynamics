@@ -17,6 +17,8 @@
     <!-- datatables css y js -->
     <link href="//cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" rel="stylesheet">
     <script src="//cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
     <title>TechCraft Dynamics</title>
 
 </head>
@@ -32,10 +34,10 @@
 
 
             
-           <!-- Menú de navegación -->
+            <!-- Menú de navegación -->
             <nav class="menu">
                 <!-- Opcion: Perfil -->
-                <a href="#" class="opcion">
+                <a href="/admins/Perfil.html" class="opcion">
                     <!-- Icono SVG de usuario -->
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M680-280q25 0 42.5-17.5T740-340q0-25-17.5-42.5T680-400q-25 0-42.5 17.5T620-340q0 25 17.5 42.5T680-280Zm0 120q31 0 57-14.5t42-38.5q-22-13-47-20t-52-7q-27 0-52 7t-47 20q16 24 42 38.5t57 14.5ZM480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v227q-19-8-39-14.5t-41-9.5v-147l-240-90-240 90v188q0 47 12.5 94t35 89.5Q310-290 342-254t71 60q11 32 29 61t41 52q-1 0-1.5.5t-1.5.5Zm200 0q-83 0-141.5-58.5T480-280q0-83 58.5-141.5T680-480q83 0 141.5 58.5T880-280q0 83-58.5 141.5T680-80ZM480-494Z"/></svg>
                     Perfil
@@ -47,7 +49,7 @@
                 </a>
 
                 <!-- Opción: Usuarios -->
-                <a href="/admins/DashBoard-admin.html" class="opcion">
+                <a href="/admins/admin.html" class="opcion">
                     <!-- Icono SVG de usuario -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
@@ -55,13 +57,12 @@
                     Gestión de usuarios
                 </a>
                 <!-- Opción: CATEGORIAS-->
-                <a href="/admins/DashBoard-adminCategorias.html" class="opcion">
+                <a href="/admins/adminCategorias.html" class="opcion">
                     <!-- Icono SVG de productos -->
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z"/></svg>
-                    Gestión de categorias
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z"/></svg>                    Gestión de categorias
                 </a>
                 <!-- Opción: PROVEEDORES -->
-                <a href="/admins/DashBoard-adminProve.html" class="opcion">
+                <a href="/admins/adminProveedores.html" class="opcion">
                     <!-- Icono SVG de ventas -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
@@ -69,7 +70,7 @@
                     Gestion de proveedores
                 </a>
                 <!-- Opcion: REPORTES -->
-                <a href="/admins/DashBoard-adminRepor.html" class="opcion">
+                <a href="/admins/adminReportes.html" class="opcion">
                     <!-- Icono SVG de ventas -->
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240ZM330-120 120-330v-300l210-210h300l210 210v300L630-120H330Zm34-80h232l164-164v-232L596-760H364L200-596v232l164 164Zm116-280Z"/></svg>
                     Gestion de reportes
@@ -91,85 +92,100 @@
                     <h2>TechCraft Dynamics</h2>
                 </div>
             </nav>
-        </aside>
+        </aside>    
+
+        
+
         <main class="contenido-principal">
-            
             <div class="titulo">
                 <h1>Perfil del administrador</h1>
             </div>
+            
+            <!-- BOOTSTRAP -->
             <div class="contenedor-tabla">
-                
-                <div class="datos">
-                    <div class="imagen">
-                        <img src="/img/icon-admin.webp" alt="">
-                        <h3>Datos Personales</h3>
-                    </div>
-                    <section class="formulario">
-                        <form id="form">
-                            <div class="DP">
-                                <!-- 1 -->
-                                <p>Nombres: </p>
-                                <input type="text" placeholder="Julian Daniel" required>
-                                <!-- 2 -->
-                                <p>Apellidos: </p>
-                                <input type="text" placeholder="Beltran Bustos" required>
-                                <!-- 3 -->
-                                <p>Tipo de documento:</p>
-                                 <select name="DC" id="DC1">
-                                    <option value="">C.C</option>
-                                    <option value="">T.I</option>
-                                    <option value="">Otro</option>
-                                </select>
-                                <!-- 4 -->
-                                <p>Numero de documento:</p>
-                                <input type="Number" placeholder="123456789"  required>
-                                <!-- 5 -->
-                            </div>
+                <body class="bg-light">
+                    <div class="container mt-4">
+                        <div class="card shadow p-4">
                             
-                            <div class="DP2">
-                                <p>Numero celular: </p>
-                                <input type="tel" placeholder="123456" required>
-
-                                <p>Correo personal: </p>
-                                <input type="email" placeholder="Julian@gmail.com" required>
-
-                                <p>Correo Empresarial: </p>
-                                <input type="email" placeholder="JB_MiAmigoFiel@gmail.com" required>
-                                <!-- 6 -->
+                                <div class="row">
+                                    <!-- Imagen del perfil -->
+                                    <div class="col-md-5 text-center">
+                                        <img src="/img/icon-admin.webp" alt="Imagen de la categoría" class="img-fluid rounded">
+                                        <p class="mt-3"><strong>Imagen del perfil</strong></p>
+                                    </div>
                                 
-                            
-                                <p>Asignar rol: </p>
-                                <select name="ROL" id="ROL1">
-                                    <option value="">Administrador</option>
-                                    <option value="">Personal</option>
-                                    <option value="">Supervisor</option>
-                                </select>
-                            </div>
+                                    <div class="col-md-7">
+                                    <form id="form">
+                                        <div class="row">
 
-                            
-                            
-                            <div class="botones">
-                                <div class="B1">
-                                    <button type="submit">Guardar</button>
-                                </div>
-                                <div class="B2">
-                                    <button type="submit">No Guardar</button>
-                                </div>
-                                <div class="B3">
-                                    <button type="submit" onclick="location.href='/admins/DashBoard-admin.html'">Regresar</button>
-                                </div>
-                            </div>
-                            
-                        </form>
-                    </section>
-                </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Nombres </label>
+                                                <input type="text" class="form-control" placeholder="Nombres">
+                                                
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Tipo de documento</label>
+                                                <select class="form-select">
+                                                    <option value="">Ninguno</option>
+                                                    <option value="Alimentos">C.C</option>
+                                                    <option value="Accesorios">Targeta de identidad</option>                                               
+                                                    <option value="Accesorios">Cedula extranjera</option>                                               
+                                                </select>
+                                            </div>
+
+                                            
+
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Apellidos</label>
+                                                <input type="email" class="form-control" placeholder="Apellidos">
+                                            </div>
+                                            
+
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Numero</label>
+                                                <input type="email" class="form-control" placeholder="Numero de cedula">
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Correo personal</label>
+                                                <input type="number" class="form-control" placeholder="Ejemplo.@gmail.com">
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Correo Empresariall</label>
+                                                <input type="number" class="form-control" placeholder="camifo.@gmail.com">
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="form-label">Numero de celular</label>
+                                                    <input type="text" class="form-control" placeholder="Teléfono o contacto">
+                                                </div>
+                                            </div>
+
+                                            <div class="text-center mt-3">
+                                                <button type="submit" class="btn btn-success">Guardar</button>
+                                                <button type="reset" class="btn btn-warning">No Guardar</button>
+                                                <a href="/admins/admin.html" class="btn btn-danger">Regresar</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>    
+                        </div>
+                    </div>
+                </body>
             </div>
         </main>
+    
     </div>
-    <script src="/js/BotonesU.js"></script>
-    
 
-        
-    
+    <script src="/js/BotonesU.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+
 </body>
 </html>

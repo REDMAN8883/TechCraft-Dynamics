@@ -175,6 +175,10 @@ body {
     height: 450px;
 }
 
+.container mt-4{
+    flex: 1;
+}
+
 .formulario .DP {
     display: flex;
     flex-wrap: wrap; 
@@ -235,22 +239,67 @@ p {
     border: 1px black solid;
     cursor: pointer;
 }
-.botones .B1 button{
-    background-color: #78C28D;  
+.btn.btn-success{
+    background-color: #139664;
+    border-color: #000000;  
+    color: #ffffff;
 }
-.botones .B1 button:hover{
-    background-color: #549227;
+.btn.btn-success:hover{
+    background-color: #05a86a;
+    border-color: #4baa86;
 }
-.botones .B2 button{
-    background-color: #78C28D;  
+.btn.btn-warning{
+    background-color: #139664;  
+    border-color: #000000;
+    color: #ffffff;
 }
-.botones .B2 button:hover{
-    background-color: #549227;
+.btn.btn-warning:hover{
+    background-color: #05a86a;
+    border-color: #4baa86;
+    color: #ffffff;
 }
-.botones .B3 button{
-    background-color: #78C28D; 
+.btn.btn-danger{
+    background-color: #139664; 
+    border-color: #000000;
+    color: #ffffff;
 }
-.botones .B3 button:hover{
-    background-color: #549227;
+.btn.btn-danger:hover{
+    background-color: #05a86a;
+    border-color: #4baa86;
+}
+.agregar button:hover{
+    background-color: #139664;
+}
+@media screen and (max-width: 768px) {
+    .barra-lateral {
+        width: 80px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .contenedor-dashboard {
+        margin-left: 80px;
+    }
+
+    .texto-opcion {
+        display: none;
+    }
+
+    .opcion {
+        justify-content: center;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .menu .opcion:hover {
+        background-color: #5cb693;
+    }
+
+    .admin h2,
+    .logo h2 {
+        display: none;
+    }
 }
 
