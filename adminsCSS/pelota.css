@@ -1,0 +1,330 @@
+
+
+.admin-container {
+    display: flex;
+    width: 100%;
+    
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    justify-content: center;
+}
+
+.subcategorias {
+    width: 25%;
+    background-color: #78C28D;
+    color: #ecf0f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+}
+
+.producto #verde{
+    color: green;
+}
+
+.subcategorias h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.subcategorias ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.subcategorias button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ED9527;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    border: 2px solid transparent;
+    color: white;
+}
+
+.subcategorias button:hover {
+    background-color: #4CAF50;
+}
+
+.productos-container {
+    width: 75%;
+    padding: 20px;
+}
+
+.productos-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.producto {
+    background-color: #e0e0e0;
+    padding: 10px; 
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin: 0;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    background-color: #d1d1d1;
+}
+:root {
+    --blanco: #FFFCE8;
+    --rojo: #DD403A;
+    --negro: #3E363F;
+}
+
+body {
+    margin: 0;
+    font-family: 'open sans';
+    background-color: rgb(243, 227, 227);
+    color: black;
+}
+
+.contenedor-dashboard {
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    min-height: 100vh;
+    margin-left: 250px;
+}
+
+.barra-lateral {
+    width: 250px;
+    background: linear-gradient(to top, #7df1c4, #4baa86, #349771, #46886f );
+    color:black;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px black solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.admin {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(138, 104, 104, 0.5); 
+    padding-bottom: 15px; 
+    padding-top: 40px;
+}
+.admin h2 {
+    font-size: 24px; 
+    font-family: 'open sans';
+    font-weight: 300;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    line-height: 1.2; 
+}
+.logo{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    padding-bottom: 5px; 
+    margin-top: 450%;
+}
+.logo h2{
+    font-size: 24px; 
+    font-family: 'open sans';
+    font-weight: 300;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    line-height: 1.2; 
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .opcion {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.menu .opcion:hover {
+    background-color: #5cb693;
+}
+
+.menu .opcion svg {
+    margin-right: 10px;
+    fill: var(--blanco);
+}
+
+.contenido-principal{
+    flex: 1;
+    padding: 20px;
+}
+
+.titulo h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 60px;
+    background: linear-gradient(to right, #7df1c4, #46886f);
+    height: 80px;
+    border: 2px#000000 solid;
+
+}
+
+.contenedor-tabla{
+    overflow-x: auto;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) ;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination a{
+    text-decoration: none;
+    color: white;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #3e8e41;
+}
+.agregar button:hover{
+    background-color: #139664;
+}
+.agregar button{
+    background-color: #54a183;
+    color: var(--blanco);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+.productos-container button:hover{
+    background-color: #139664;
+}
+.productos-container button{
+    background-color: #54a183;
+    color: var(--blanco);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+.producto .botones {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los botones */
+    gap: 10px; /* Espaciado entre botones */
+    opacity: 0; /* Ocultos inicialmente */
+    transition: opacity 0.3s;
+}
+
+.producto:hover .botones {
+    opacity: 1; /* Muestra los botones al pasar el mouse */
+}
+
+.producto button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #3e8e41;
+}
+
+@media screen and (max-width: 768px) {
+    .barra-lateral {
+        width: 80px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .contenedor-dashboard {
+        margin-left: 80px;
+    }
+
+    .texto-opcion {
+        display: none;
+    }
+
+    .opcion {
+        justify-content: center;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .menu .opcion:hover {
+        background-color: #5cb693;
+    }
+
+    .admin h2,
+    .logo h2 {
+        display: none;
+    }
+}
